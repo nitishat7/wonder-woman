@@ -38,7 +38,7 @@ const Community = () => {
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
-      {/* Hero section for Program Highlights */}
+      
       <div className="relative h-64 flex items-center justify-center mb-12 overflow-hidden">
         <Image
           src="/images/community-hero.jpg" // You'll need to add this image

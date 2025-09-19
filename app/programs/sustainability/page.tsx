@@ -11,28 +11,24 @@ import {
 const Sustainability = () => {
   const programs = [
     {
-      title: "Scholarship Program",
-      description: "Provides financial assistance to deserving students, covering tuition, books, and other educational expenses.",
-      image: "/images/scholarship.png", // You'll need to add this image
-      bgColor: "bg-teal-500", // Example background for the card header
+      title: "Green Energy Initiative",
+      description: "Promoting renewable energy adoption and sustainable power solutions for communities. We help implement solar panels, wind energy, and other clean technologies to reduce carbon footprints.",
+      image: "/images/green-energy.jpg",
     },
     {
-      title: "Mentorship Program",
-      description: "Connects students with experienced professionals who offer guidance, support, and career advice.",
-      image: "/images/mentorship.png", // You'll need to add this image
-      bgColor: "bg-white",
+      title: "Waste Reduction Program",
+      description: "Comprehensive recycling and waste management programs to minimize environmental impact. Our initiatives include composting, plastic reduction, and circular economy practices.",
+      image: "/images/waste-reduction.jpg",
     },
     {
-      title: "After-School Tutoring",
-      description: "Offers academic support and homework help in a safe and structured environment.",
-      image: "/images/tutoring.png", // You'll need to add this image
-      bgColor: "bg-white",
+      title: "Urban Gardening",
+      description: "Community gardens and urban farming initiatives to promote local food production and green spaces. We teach sustainable agriculture techniques and provide resources for urban farmers.",
+      image: "/images/urban-gardening.jpg",
     },
     {
-      title: "Career Development",
-      description: "Prepares students for future careers through workshops, internships, and networking opportunities.",
-      image: "/images/career.png", // You'll need to add this image
-      bgColor: "bg-gray-800",
+      title: "Environmental Education",
+      description: "Educational programs and workshops to raise awareness about environmental conservation and sustainable living practices for all age groups.",
+      image: "/images/environmental-education.jpg",
     },
   ];
 
@@ -55,35 +51,32 @@ const Sustainability = () => {
         </h2>
       </div>
 
-      <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {programs.map((program, index) => (
-            <Card key={index} className="flex flex-col rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105">
-              <CardHeader className={`relative h-48 flex items-center justify-center ${program.bgColor}`}>
-                {program.image && (
-                  <Image
-                    src={program.image}
-                    alt={program.title}
-                    width={150}
-                    height={150}
-                    objectFit="contain"
-                    className="z-10"
-                  />
-                )}
-                {/* Optional: Add a subtle overlay or pattern for visual interest */}
-                <div className="absolute inset-0 opacity-20" style={{ backgroundImage: program.bgColor === 'bg-white' ? 'none' : 'radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%)' }} />
-              </CardHeader>
-              <CardContent className="p-6 flex-grow flex flex-col">
-                <CardTitle className="text-xl font-semibold text-gray-900 mb-2">
-                  {program.title}
-                </CardTitle>
-                <CardDescription className="text-gray-600 flex-grow">
-                  {program.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+      <div className="max-w-6xl mx-auto space-y-8">
+        {programs.map((program, index) => (
+          <Card key={index} className="flex flex-col md:flex-row rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl">
+            {/* Image Section */}
+            <div className="md:w-1/2 h-64 md:h-auto">
+              <div className="relative w-full h-full">
+                <Image
+                  src={program.image}
+                  alt={program.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+            
+            {/* Content Section */}
+            <div className="md:w-1/2 p-8 flex flex-col justify-center">
+              <CardTitle className="text-2xl font-bold text-gray-900 mb-4">
+                {program.title}
+              </CardTitle>
+              <CardDescription className="text-lg text-gray-600 leading-relaxed">
+                {program.description}
+              </CardDescription>
+            </div>
+          </Card>
+        ))}
       </div>
 
       {/* Accordion Section */}

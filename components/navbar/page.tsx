@@ -29,7 +29,6 @@ const Navbar = () => {
         { name: "Our Mission", href: "/about/mission" },
         { name: "Our Team", href: "/about/team" },
         { name: "Our Story", href: "/about/story" },
-        { name: "Impact Report", href: "/about/impact" },
       ],
     },
     {
@@ -58,7 +57,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white/80 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,14 +78,14 @@ const Navbar = () => {
               <div className="flex flex-col">
                 <span
                   className={`font-bold text-lg lg:text-xl ${
-                    isScrolled ? "text-gray-900" : "text-white"
+                    isScrolled ? "text-gray-900" : "text-gray-900"
                   }`}
                 >
                   LCK Wonder Woman
                 </span>
                 <span
                   className={`text-xs ${
-                    isScrolled ? "text-gray-600" : "text-gray-200"
+                    isScrolled ? "text-gray-600" : "text-gray-600"
                   }`}
                 >
                   Spread Love and Happiness
@@ -106,7 +105,7 @@ const Navbar = () => {
                         className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 flex items-center space-x-1 ${
                           isScrolled
                             ? "text-gray-700 hover:text-primary hover:bg-gray-100"
-                            : "text-white hover:text-yellow-400 hover:bg-white/10"
+                            : "text-gray-700 hover:text-yellow-400 hover:bg-gray-100"
                         }`}
                         onMouseEnter={() => setActiveDropdown(item.name)}
                       >
@@ -140,7 +139,7 @@ const Navbar = () => {
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
                         isScrolled
                           ? "text-gray-700 hover:text-primary hover:bg-gray-100"
-                          : "text-white hover:text-yellow-400 hover:bg-white/10"
+                          : "text-gray-700 hover:text-yellow-400 hover:bg-gray-100"
                       }`}
                     >
                       {item.name}
@@ -164,7 +163,7 @@ const Navbar = () => {
               className={`p-2 rounded-md transition-colors duration-200 ${
                 isScrolled
                   ? "text-gray-700 hover:text-primary hover:bg-gray-100"
-                  : "text-white hover:text-yellow-400 hover:bg-white/10"
+                  : "text-gray-700 hover:text-yellow-400 hover:bg-gray-100"
               }`}
             >
               {isOpen ? (

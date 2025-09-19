@@ -7,56 +7,82 @@ import {
   Megaphone,
   Code,
   Headphones,
+  HeartPlusIcon,
+  Syringe,
+  TreesIcon,
+  PersonStanding,
+  EyeIcon,
+  EyeClosed,
+  SpeakerIcon,
+  Speech,
+  Ribbon,
+  Hospital,
+  HandCoins,
 } from "lucide-react";
 
 export default function OurStoryPage() {
   const services = [
     {
-      icon: LineChart,
-      title: "Research",
+      icon: HeartPlusIcon,
+      title: "Health Camp",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Cervical Cancer Health Camp",
     },
     {
-      icon: Target,
-      title: "Strategy",
+      icon: Syringe,
+      title: "Blood Donation Camp",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Blood Donation Campaign",
     },
     {
-      icon: Palette,
-      title: "Design",
+      icon: TreesIcon,
+      title: "Tree Plantation",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Tree Plantation Campaign",
     },
     {
-      icon: Megaphone,
-      title: "Marketing",
+      icon: PersonStanding ,
+      title: "Hunger Releif Program",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        ""
     },
     {
-      icon: Code,
-      title: "Development",
+      icon: EyeIcon,
+      title: "Eye Dental Camp",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "",
     },
     {
-      icon: Headphones,
-      title: "Support",
+      icon: Speech,
+      title: "Motivaltional Program",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "",
+    },
+    {
+      icon: Ribbon,
+      title: "Awareness Program",
+      description:
+        "",
+    },
+    {
+      icon: Hospital,
+      title: "Health Support and Donation Program",
+      description:
+        "",
+    },
+    {
+      icon: HandCoins,
+      title: "Occasion Donation Program",
+      description:
+        "",
     },
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Background section - you can replace this with an actual image or more complex styling */}
       <div className="relative h-64 bg-gray-200 flex items-center justify-center overflow-hidden">
-        {/* This div is a placeholder for the background image from the original design */}
-        {/* You can replace this with an <Image> component or a div with a background-image style */}
         <img
-          src="/placeholder-marketing-strategy.png" // Replace with your actual image path
+          src="/placeholder-marketing-strategy.png" 
           alt="Marketing Strategy Background"
           className="absolute inset-0 w-full h-full object-cover grayscale"
         />

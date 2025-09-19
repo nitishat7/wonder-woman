@@ -5,26 +5,26 @@ const ceo = {
   image: "/images/team/img1.png",
   name: "Megha Timalsina",
   title: "Founder and 1st Charter President",
-  description: "Ethan is the visionary behind TechBlog, driving innovation and shaping the future of tech journalism. With over 15 years of experience in the industry, he brings a wealth of knowledge and a passion for technology to our team.",
+  description: "The Visionary Behind Wonder Woman Megha is the driving force and visionary behind our community-driven initiative, Wonder Woman. With a passion for empowering women and making a positive impact, she founded this movement to unite like-minded women dedicated to serving those in need. Her vision is to create a space where women from all walks of life can come together, lead, and make a difference without any personal gain. Through her unwavering dedication and leadership, Megha has inspired countless others to rise, serve, and contribute to the well-being of the community",
 };
 
 const teamMembers = [
-  {
-    image: "/images/team/img2.png",
-    name: "Liam Harper",
-    title: "Editor-in-Chief",
-    description: "Liam leads our editorial team with a passion for tech and storytelling.",
-  },
+  // {
+  //   image: "/images/team/img2.png",
+  //   name: "Liam Harper",
+  //   title: "Editor-in-Chief",
+  //   description: "Liam leads our editorial team with a passion for tech and storytelling.",
+  // },
   {
     image: "/images/team/img3.png",
-    name: "Olivia Bennett",
-    title: "Senior Writer",
-    description: "Olivia brings years of experience in tech journalism to our writing team.",
+    name: "Sulena Shrestha",
+    title: "President (2024-2025)",
+    description: "Sulena is a very dedicated and cheerful member of the club.",
   },
   {
     image: "/images/team/img4.png",
-    name: "Noah Thompson",
-    title: "Tech Analyst",
+    name: "Saradha Sharma Timalsina",
+    title: "President (2025-Present)",
     description: "Noah analyzes market trends and emerging technologies.",
   },
   {
@@ -42,7 +42,85 @@ const teamMembers = [
   {
     image: "/images/team/img7.png",
     name: "Ava Greene",
-    title: "Ava Greene", // The image only shows the name, not title/description. Assuming name for now.
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
+    description: "",
+  },
+  {
+    image: "/images/team/img7.png",
+    name: "Ava Greene",
+    title: "Ava Greene", 
     description: "",
   },
 ];
@@ -66,7 +144,7 @@ export default function Team() {
       <div style={{ marginBottom: '60px', textAlign: 'center' }}>
         <h2 style={{ fontSize: '32px', fontWeight: 'bold', marginBottom: '15px' }}>Meet Our Team</h2>
         <p style={{ fontSize: '18px', color: '#555', lineHeight: '1.6' }}>
-          Get to know the talented individuals behind our blog. Our team of experts and enthusiasts are dedicated to bringing you the latest insights and trends in technology.
+        Our strength lies in the diversity and dedication of our incredible members. Each woman brings her unique skills, passion, and vision to our cause. Together, we are a force for positive change in our community. Meet the team members.
         </p>
       </div>
 
